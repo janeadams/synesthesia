@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image classifier</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.1.2/dist/tf.min.js"></script>
+  <script src="https://storage.googleapis.com/tm-pro/v1.0.5-c/teachablemachine-image.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+</head>
+
+<style>
+  .bold-text {
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>
+
+<body>
+  <h2>Image classifier on Webcam</h2>
+  <span>Json file (optional)</span><input type="file" id="json">
+  <span>Weights file (optional)</span><input type="file" id="weights">
+  <div>
+    <p>The image classifier classify video as class <span id="res" class="bold-text">...</span> with <span id="prob" class="bold-text">...</span> confidence.</p>
+    <p>Class 0: allblack (cover your webcam with your finger)</p>
+    <p>Class 1: anythingelse (don't cover your webcam)</p>
+    <div id='vidContainer'></div>
+  </div>
+  
+  <script src="sketch.js"></script>
+</body>
+
+</html>

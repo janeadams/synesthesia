@@ -1,0 +1,12 @@
+teachable_machines/video/
+teachable_machines/audio-model/
+*.zip
+*.mov
+*.mp4
+*.ai
+*/.DS_Store
+.ipynb_checkpoints/
+gallery/
+*.pdf
+.DS_Store
+
